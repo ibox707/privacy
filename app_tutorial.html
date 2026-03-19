@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>App 使用教程（多媒体内容管理与播放）</title>
+  <style>
+    :root { --bg:#0b1220; --card:#111b2e; --text:#e6eefc; --muted:#a9b7d6; --accent:#6aa9ff; }
+    body{
+      margin:0; background:linear-gradient(180deg,#070b14, #0b1220);
+      color:var(--text); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    }
+    .wrap{ max-width:920px; margin:0 auto; padding:28px 16px 56px; }
+    .header{
+      background:rgba(17,27,46,.9); border:1px solid rgba(106,169,255,.25);
+      border-radius:16px; padding:22px 18px; margin-bottom:18px;
+    }
+    h1{ margin:0 0 6px; font-size:22px; }
+    .sub{ color:var(--muted); margin:0; font-size:13px; line-height:1.6; }
+    .tag{ display:inline-block; padding:4px 10px; border-radius:999px; background:rgba(106,169,255,.18); border:1px solid rgba(106,169,255,.28); font-size:12px; color:#dbe9ff; margin-top:10px; }
+    .card{
+      background:rgba(17,27,46,.75);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:16px; padding:18px 16px; margin-top:14px;
+    }
+    h2{ font-size:16px; margin:0 0 10px; color:#f2f7ff; }
+    p{ margin:8px 0; color:var(--muted); line-height:1.8; font-size:14px; }
+    ul{ margin:8px 0 0 18px; padding:0; }
+    li{ color:var(--muted); line-height:1.8; margin:6px 0; font-size:14px; }
+    .note{
+      margin-top:18px; padding:14px 14px; border-radius:12px;
+      background:rgba(106,169,255,.10); border:1px solid rgba(106,169,255,.22);
+      color:#dfeaff; font-size:14px; line-height:1.8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <div class="header">
+      <h1>App 使用教程</h1>
+      <p class="sub">一款功能丰富的多媒体内容管理与播放工具，专为有自建资源的用户设计。</p>
+      <div class="tag">全原生架构 · 统一管理 · 高品质播放体验</div>
+    </div>
+
+    <div class="card">
+      <h2>应用概述</h2>
+      <p>
+        应用采用全原生架构，为视频、音频、图书等多种类型的自有内容提供统一管理与高品质播放体验。
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>主要功能</h2>
+
+      <h2 style="margin-top:6px;">1. 自建视频订阅与播放</h2>
+      <ul>
+        <li>支持添加和管理自建订阅源，连接个人服务器，安全访问自己的视频资源。</li>
+        <li>内置高性能视频解码引擎，几乎兼容所有主流视频格式。支持丰富的视频播放手势。</li>
+        <li>采用自研 MPV 播放内核与 GPU 硬件解码，针对 HDR / 4K 等高码率视频进行专门优化，有效改善绿屏、卡顿等问题。</li>
+        <li>App 使用了 4 个播放器：阿里播放器（缓冲快/支持格式少）、VLC（建议播放 4K 选择）、MPV（建议播放 4K 选择）、IJK（缓冲稍慢/支持格式多）。</li>
+      </ul>
+
+      <h2 style="margin-top:6px;">2. HTTP 推送播放</h2>
+      <ul>
+        <li>支持从局域网或其他终端推送 HTTP 视频链接，一键在本机进行原生播放。</li>
+      </ul>
+
+      <h2 style="margin-top:6px;">3. 多云盘资源管理</h2>
+      <ul>
+        <li>集成阿里云盘、夸克云盘、UC 云盘、百度网盘等主流云盘服务。</li>
+        <li>在应用内集中浏览、管理云盘中的视频与图片资源，支持查看、删除等常用操作，方便整理个人云端内容。</li>
+      </ul>
+
+      <h2 style="margin-top:6px;">4. 个人音乐服务器播放</h2>
+      <ul>
+        <li>支持连接自建音乐服务器，按歌单、歌手、专辑等维度浏览和播放自己的音乐收藏。</li>
+      </ul>
+
+      <h2 style="margin-top:6px;">5. 个人小说服务器阅读</h2>
+      <ul>
+        <li>可连接自建小说服务器，支持多种阅读主题和丰富的翻页效果，提供沉浸式阅读体验。</li>
+      </ul>
+
+      <h2 style="margin-top:6px;">6. 有声读物收听</h2>
+      <ul>
+        <li>支持接入自建有声读物服务器，统一管理和收听有声内容，适合通勤与碎片时间使用。</li>
+      </ul>
+    </div>
+
+    <div class="note">
+      <strong>版权与内容说明：</strong>
+      本应用不内置任何第三方受版权保护的内容，所有资源均由用户自行在合法授权范围内添加和管理。
+    </div>
+  </div>
+</body>
+</html>
