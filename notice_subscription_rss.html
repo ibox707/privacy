@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>重要通告 · 订阅源、自建与青少年提示</title>
+  <style>
+    :root {
+      --text:#e6eefc;
+      --muted:#a9b7d6;
+      --accent:#7dd3a8;
+      --accent-soft:rgba(125,211,168,.14);
+      --border:rgba(125,211,168,.38);
+      --youth:#c4a8ff;
+      --youth-border:rgba(196,168,255,.38);
+    }
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#070b14, #0b1220);
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    }
+    .wrap{ max-width:920px; margin:0 auto; padding:28px 16px 56px; }
+    .ribbon{
+      display:inline-block;
+      padding:4px 12px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:600;
+      letter-spacing:.06em;
+      background:var(--accent-soft);
+      border:1px solid var(--border);
+      color:#d4f5e8;
+      margin-bottom:12px;
+    }
+    .header{
+      background:rgba(17,27,46,.92);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:22px 18px;
+      margin-bottom:18px;
+    }
+    h1{ margin:0 0 8px; font-size:22px; line-height:1.35; }
+    .meta{ color:var(--muted); font-size:13px; margin:0; line-height:1.6; }
+    .card{
+      background:rgba(17,27,46,.75);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:16px;
+      padding:18px 16px;
+      margin-top:14px;
+    }
+    .block-title{
+      font-size:13px;
+      font-weight:600;
+      color:#9dd4b8;
+      letter-spacing:.08em;
+      margin:28px 0 4px;
+      padding-bottom:8px;
+      border-bottom:1px solid rgba(125,211,168,.25);
+    }
+    .block-title:first-of-type{ margin-top:0; }
+    .block-title.youth{
+      color:#c8b8f0;
+      border-bottom-color:rgba(196,168,255,.28);
+      margin-top:32px;
+    }
+    h2{
+      font-size:16px;
+      margin:0 0 10px;
+      color:#f2f7ff;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    h2::before{
+      content:"";
+      width:4px;
+      height:16px;
+      border-radius:2px;
+      background:linear-gradient(180deg,#7dd3a8,#4fc49a);
+      flex-shrink:0;
+    }
+    h2.youth::before{
+      background:linear-gradient(180deg,#c4a8ff,#9b7fd9);
+    }
+    p{ margin:8px 0; color:var(--muted); line-height:1.85; font-size:14px; }
+    ul{ margin:8px 0 0 18px; padding:0; }
+    li{ color:var(--muted); line-height:1.85; margin:6px 0; font-size:14px; }
+    .highlight{
+      margin-top:14px;
+      padding:14px 14px;
+      border-radius:12px;
+      background:rgba(125,211,168,.08);
+      border:1px solid var(--border);
+      color:#d4f5e8;
+      font-size:14px;
+      line-height:1.85;
+    }
+    .highlight strong{ color:#eefcf4; }
+    .highlight-youth{
+      margin-top:14px;
+      padding:14px 14px;
+      border-radius:12px;
+      background:rgba(196,168,255,.08);
+      border:1px solid var(--youth-border);
+      color:#ebe4ff;
+      font-size:14px;
+      line-height:1.85;
+    }
+    .highlight-youth strong{ color:#f5f0ff; }
+    .footer-note{
+      margin-top:18px;
+      padding:12px 14px;
+      border-radius:12px;
+      background:rgba(106,169,255,.08);
+      border:1px solid rgba(106,169,255,.2);
+      color:#c8d9f5;
+      font-size:13px;
+      line-height:1.75;
+    }
+    strong.em{ color:#dbe9ff; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="ribbon">重要通告 · 订阅与自建 · 青少年</div>
+
+    <div class="header">
+      <h1>订阅源、RSS、自建服务与青少年使用提示</h1>
+      <p class="meta">前半部分为订阅与自建使用规范；后半部分为未成年人使用提示（如适用）。内容可能随产品能力调整而更新。</p>
+    </div>
+
+    <!-- 订阅与自建 -->
+    <p class="block-title">一、订阅源、RSS 与自建服务</p>
+
+    <div class="card">
+      <h2>基本原则</h2>
+      <p>
+        您通过本应用添加的 <strong class="em">订阅源、RSS、服务器地址</strong> 均由您自行配置；应用仅作为客户端连接您指定的合法来源。
+        请确保您对所连接资源拥有 <strong>合法访问与使用权限</strong>，并遵守来源站点的服务条款与当地法律法规。
+      </p>
+      <div class="highlight">
+        <strong>禁止行为包括但不限于：</strong>未经授权抓取、传播受版权保护的内容；利用订阅能力从事违法或侵权活动。相关责任由用户自行承担。
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>订阅源与 RSS</h2>
+      <ul>
+        <li><strong class="em">格式与兼容性</strong>：请使用应用支持的订阅格式（如 RSS/Atom 等，以实际产品说明为准）；无效或过期地址可能导致无法更新或解析失败。</li>
+        <li><strong class="em">更新频率</strong>：为减轻服务器压力，应用可能对拉取间隔做合理限制；请勿通过外挂脚本恶意高频请求。</li>
+        <li><strong class="em">证书与 HTTPS</strong>：建议使用 HTTPS；自签名证书可能需在系统或应用内单独信任，具体以客户端提示为准。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>自建服务</h2>
+      <ul>
+        <li><strong class="em">地址与端口</strong>：请填写可访问的基础 URL；若服务在局域网内，请确保设备与服务器处于同一网络且未被防火墙隔离。</li>
+        <li><strong class="em">账号与安全</strong>：登录凭据由您自行保管；建议在可信网络环境下使用，并定期更新密码与访问令牌。</li>
+        <li><strong class="em">版本差异</strong>：不同服务端版本 API 可能不兼容；若连接异常，请核对服务端版本与官方文档。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>故障排查提示</h2>
+      <p>
+        出现超时、403、证书错误等情况时，请先检查网络、订阅地址、服务端状态及权限配置；仍无法解决时可通过应用内反馈渠道联系我们（请避免在公开场合泄露密码与 Token）。
+      </p>
+    </div>
+
+    <!-- 青少年 -->
+    <p class="block-title youth">二、儿童与青少年使用提示（如适用）</p>
+
+    <div class="card">
+      <h2 class="youth">给家长与监护人</h2>
+      <p>
+        本应用为 <strong class="em">多媒体内容管理与播放工具</strong>，用户可自行添加订阅源、连接自建服务或云盘。
+        <strong>未成年人应在监护人同意与指导下使用</strong>，并由监护人关注所连接内容的来源与适宜性。
+      </p>
+      <div class="highlight-youth">
+        <strong>建议：</strong>与未成年人共同制定设备与网络使用规则，避免在无人监督的情况下长期单独使用含外链与自建源能力的应用。
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="youth">内容与来源责任</h2>
+      <ul>
+        <li>应用 <strong class="em">不内置</strong> 第三方受版权保护的内容；展示与播放内容由用户或用户所连接的服务提供。</li>
+        <li>监护人应引导未成年人仅访问 <strong>合法、适龄</strong> 的内容，并妥善保管账号、云盘与自建服务的登录信息。</li>
+        <li>若发现不当内容或异常链接，请停止使用相关来源并及时向我们或有关平台反馈。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2 class="youth">隐私与安全（简要）</h2>
+      <p>
+        我们重视用户隐私；涉及未成年人个人信息处理时，将遵循适用法律及《隐私政策》中的说明。
+        请监护人协助未成年人阅读并理解隐私相关条款，并在必要时联系监护人同意流程（若产品提供该能力）。
+      </p>
+    </div>
+
+    <div class="card">
+      <h2 class="youth">地域与合规说明</h2>
+      <p>
+        不同国家或地区对未成年人保护、年龄分级与家长同意要求不同；若您面向特定地区运营，请在法律顾问协助下补充本地化条款与年龄门槛。
+      </p>
+    </div>
+
+    <p class="footer-note">
+      本文为使用规范与通用提示模板；具体功能以应用内说明为准。青少年相关部分不构成法律意见，请结合目标市场与法律顾问意见调整。
+    </p>
+  </div>
+</body>
+</html>
