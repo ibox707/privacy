@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>重要通告 · 阿里云盘 API（开放平台）</title>
+  <style>
+    :root {
+      --text:#e6eefc;
+      --muted:#a9b7d6;
+      --accent:#5ec8ff;
+      --accent-soft:rgba(94,200,255,.16);
+      --border:rgba(94,200,255,.38);
+    }
+    body{
+      margin:0;
+      background:linear-gradient(180deg,#070b14, #0b1220);
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    }
+    .wrap{ max-width:920px; margin:0 auto; padding:28px 16px 56px; }
+    .ribbon{
+      display:inline-block;
+      padding:4px 12px;
+      border-radius:999px;
+      font-size:12px;
+      font-weight:600;
+      letter-spacing:.06em;
+      background:var(--accent-soft);
+      border:1px solid var(--border);
+      color:#d4f0ff;
+      margin-bottom:12px;
+    }
+    .header{
+      background:rgba(17,27,46,.92);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:22px 18px;
+      margin-bottom:18px;
+    }
+    h1{ margin:0 0 8px; font-size:22px; line-height:1.35; }
+    .meta{ color:var(--muted); font-size:13px; margin:0; line-height:1.6; }
+    .card{
+      background:rgba(17,27,46,.75);
+      border:1px solid rgba(255,255,255,.06);
+      border-radius:16px;
+      padding:18px 16px;
+      margin-top:14px;
+    }
+    .date-tag{
+      display:inline-block;
+      font-size:12px;
+      font-weight:600;
+      color:#7dd3ff;
+      margin-bottom:10px;
+      letter-spacing:.02em;
+    }
+    h2{
+      font-size:16px;
+      margin:0 0 10px;
+      color:#f2f7ff;
+      display:flex;
+      align-items:center;
+      gap:8px;
+    }
+    h2::before{
+      content:"";
+      width:4px;
+      height:16px;
+      border-radius:2px;
+      background:linear-gradient(180deg,#5ec8ff,#3aa8e6);
+      flex-shrink:0;
+    }
+    h3{
+      font-size:14px;
+      margin:16px 0 8px;
+      color:#dbe9ff;
+      font-weight:600;
+    }
+    h3:first-child{ margin-top:0; }
+    p{ margin:8px 0; color:var(--muted); line-height:1.85; font-size:14px; }
+    ul, ol{ margin:8px 0 0 18px; padding:0; }
+    li{ color:var(--muted); line-height:1.85; margin:6px 0; font-size:14px; }
+    .qa{ margin-top:12px; }
+    .qa-q{ color:#c8d9f0; font-weight:600; margin-top:12px; }
+    .qa-q:first-child{ margin-top:0; }
+    .highlight{
+      margin-top:14px;
+      padding:14px 14px;
+      border-radius:12px;
+      background:rgba(94,200,255,.08);
+      border:1px solid var(--border);
+      color:#d4f0ff;
+      font-size:14px;
+      line-height:1.85;
+    }
+    .highlight strong{ color:#eef8ff; }
+    .warn{
+      margin-top:12px;
+      padding:14px 14px;
+      border-radius:12px;
+      background:rgba(255,120,100,.08);
+      border:1px solid rgba(255,140,120,.28);
+      color:#ffd4cc;
+      font-size:14px;
+      line-height:1.85;
+    }
+    .footer-note{
+      margin-top:18px;
+      padding:12px 14px;
+      border-radius:12px;
+      background:rgba(106,169,255,.08);
+      border:1px solid rgba(106,169,255,.2);
+      color:#c8d9f5;
+      font-size:13px;
+      line-height:1.75;
+    }
+    strong.em{ color:#dbe9ff; }
+    code, .mono{
+      font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;
+      font-size:12px;
+      background:rgba(0,0,0,.25);
+      padding:2px 6px;
+      border-radius:4px;
+      color:#b8e0ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="ribbon">重要通告 · 阿里云盘 API</div>
+
+    <div class="header">
+      <h1>阿里云盘开放平台 · 阿里云盘 API 公告整理</h1>
+      <p class="meta">
+        <strong class="em">本页所述接口、路径与策略均指阿里云盘官方开放平台（OpenAPI），即「阿里云盘 API」</strong>，非本应用自建的通用网页接口。
+        以下内容来自阿里云盘开放平台历史公告，按日期归档；具体以阿里云盘开放平台最新文档与公告为准。
+      </p>
+    </div>
+
+    <!-- 2024-07-01 -->
+    <div class="card">
+      <span class="date-tag">2024-07-01</span>
+      <h2>阿里云盘 API 调整预告</h2>
+      <p>
+        <strong class="em">阿里云盘开放平台对部分阿里云盘 API</strong>做了调整，具体以阿里云盘开放平台最新文档为准。
+      </p>
+      <p>
+        对于<strong>未接入</strong>阿里云盘开放平台的应用，请依据<strong class="em">阿里云盘 API 最新文档</strong>进行开发；对于<strong>已接入</strong>的应用，请关注以下阿里云盘 API 变更。
+      </p>
+
+      <h3>阿里云盘 API：获取文件详情 / 获取文件下载链接</h3>
+      <p>下载、文件详情等相关阿里云盘 API 若有字段或行为调整，请以官方「获取文件详情」等文档为准。</p>
+
+      <h3>阿里云盘 API：分片下载并发限制</h3>
+      <p>对「文件分片下载的并发数」增加限制（阿里云盘 API 侧规则），按应用等级不同：</p>
+      <ul>
+        <li>普通应用：并发数 <strong class="em">3</strong></li>
+        <li>认证应用：并发数 <strong class="em">6</strong></li>
+        <li>风险应用：并发数 <strong class="em">2</strong></li>
+      </ul>
+      <p>若超过并发限制再次调用阿里云盘 API，接口返回 <strong class="em">403</strong> 错误。</p>
+
+      <h3>阿里云盘 API：视频文件播放</h3>
+      <p>获取文件播放详情等阿里云盘 API，可返回的清晰度档位与参数以官方文档为准。</p>
+
+      <h3>阿里云盘 API：用户信息</h3>
+      <p>查询用户信息相关阿里云盘 API，返回字段以官方文档为准；若有新增或变更，请以开放平台公告与接口说明为准。</p>
+
+      <h3>产品说明（UI）与阿里云盘 API</h3>
+      <p>阿里云盘 App 内将「备份盘」与「资源库」做了整合，<strong class="em">仅为 UI 调整</strong>；<strong class="em">阿里云盘 API</strong> 层面仍为两个 <span class="mono">drive_id</span>。</p>
+    </div>
+
+    <!-- 2023-09-07 -->
+    <div class="card">
+      <span class="date-tag">2023-09-07</span>
+      <h2>阿里云盘开放平台立场与合规使用（阿里云盘 API）</h2>
+      <p>近期收到用户反馈账号因「涉嫌违规」被「限制登录」，<strong class="em">阿里云盘开放平台</strong>立场与原则如下（适用于调用阿里云盘 API 的开发者）。</p>
+
+      <h3>我们希望</h3>
+      <ul>
+        <li>为开发者提供开发友好的 <strong class="em">阿里云盘 OpenAPI</strong>，帮助以更低成本集成阿里云盘个人云存储，与开发者共同成长；</li>
+        <li>为用户提供长期、稳定、好用的云存储服务，保障数据安全与个人隐私。</li>
+      </ul>
+
+      <h3>我们禁止</h3>
+      <ul>
+        <li>禁止分享<strong class="em">开发者账号</strong>（含 appid 与 secret）；</li>
+        <li>禁止分享<strong class="em">个人账号</strong>（含用户 token）；</li>
+        <li>禁止分享<strong class="em">文件下载地址与视频播放地址</strong>；</li>
+        <li>禁止不规范接入导致泄露用户隐私的行为。</li>
+      </ul>
+
+      <div class="warn">
+        <strong>请自查并及时停止：</strong>图床/文件分发、将播放链接挂到外网做视频网站、将开发者账号共享给终端用户、替代 OSS 做企业服务等。安全团队会实时监控，违规可能<strong>封号且无法解封</strong>。
+      </div>
+    </div>
+
+    <!-- 2023-08-03 -->
+    <div class="card">
+      <span class="date-tag">2023-08-03</span>
+      <h2>「备份盘」与「资源库」空间拆分（V4.9.1）与阿里云盘 API</h2>
+      <p>阿里云盘客户端升级后，原「文件」拆分为两个空间：「备份盘」与「资源库」。以下与 <strong class="em">阿里云盘 API</strong> 中「用户信息」「文件列表」「播放」等能力相关。</p>
+
+      <div class="qa">
+        <p class="qa-q">Q：为什么有两个存储空间？区别是什么？</p>
+        <p><strong class="em">备份盘</strong>：独立空间，存自己备份与上传的文件；上传/下载/列表/预览与原「文件」一致；<strong>不支持公开分享</strong>，支持快传；<strong>不支持</strong>复制到「资源库」；手机/电脑/微信/钉钉备份文件会上传至此。</p>
+        <p><strong class="em">资源库</strong>：从公开分享转存的文件默认存此处；上传/下载/列表/预览一致；<strong>支持公开分享</strong>与快传；支持复制、移动到「备份盘」。（LV1 以上分享达人升级后默认存「资源库」，<span class="mono">default_drive_id</span> 默认也为资源库。）</p>
+
+        <p class="qa-q">Q：对「获取用户文件列表与详情」的影响？</p>
+        <p>可通过<strong class="em">阿里云盘 API</strong>「用户信息」相关接口获取「备份盘」与「资源库」的 <span class="mono">drive_id</span>。若不做处理，云盘侧兼容：<span class="mono">default_drive_id</span> 等效于「备份盘」的 <span class="mono">drive_id</span>。若用户登录过新版本，可拿到两个 drive_id；未登录过新版本则仅有 <span class="mono">default_drive_id</span>。</p>
+
+        <p class="qa-q">Q：对「获取用户最近播放记录」的影响？</p>
+        <p>视频播放相关阿里云盘 API：返回结果为「备份盘」与「资源库」播放记录的<strong>并集</strong>（8.4 上线说明）；此前可能仅展示 <span class="mono">default_drive_id</span> 侧记录，以官方文档为准。</p>
+
+        <p class="qa-q">Q：复制与移动限制？</p>
+        <p>备份盘 → 资源库：<strong>不支持</strong>复制与移动（阿里云盘 API 后续会做限制）。资源库 → 备份盘：支持复制与移动；文件被冻结则移动失败。</p>
+
+        <p class="qa-q">Q：三方应用用户侧影响？</p>
+        <p>若转存文件在应用中看不到，可能是应用默认读「备份盘」；可将文件从「资源库」移到「备份盘」。</p>
+      </div>
+    </div>
+
+    <!-- 2023-06-30 -->
+    <div class="card">
+      <span class="date-tag">2023-06-30</span>
+      <h2>阿里云盘 API：下载链接过期时间参数调整</h2>
+      <p>业务升级，计划对阿里云盘 OpenAPI 路径 <span class="mono">/adrive/v1.0/openFile/getDownloadUrl</span>（获取下载链接等）的下载过期时间参数做调整（详见阿里云盘开放平台「获取文件详情」等文档）。</p>
+      <ul>
+        <li><strong class="em">原</strong>：最长 115,200 秒（32 小时），默认 900 秒；</li>
+        <li><strong class="em">调整后</strong>：最长 <strong>1800 秒（0.5 小时）</strong>，默认仍为 900 秒；</li>
+        <li>传入 &lt; 1800 秒：本次调整无影响；</li>
+        <li>传入 &gt; 1800 秒：将按 1800 秒处理；</li>
+        <li>该阿里云盘 API 调整时间：<strong class="em">8 月 14 日</strong>（以公告当年为准）。</li>
+      </ul>
+      <div class="highlight">
+        <strong>建议：</strong>下载地址更新逻辑按 <span class="mono">x-oss-expires</span> 设置过期时间；若此前已按此处理则无影响；若写死过期时间，请尽快调整调用方式。
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>通用说明：阿里云盘 API 限流与密钥安全</h2>
+      <ul>
+        <li><strong class="em">阿里云盘 API</strong> 可能按频率、并发等维度限流；超限可能返回 403 / 429 等，请以阿里云盘开放平台官方文档为准。</li>
+        <li>请妥善保管阿里云盘开放平台颁发的 appid、secret 及用户 token，勿在客户端明文暴露或对外分享。</li>
+        <li>阿里云盘 API 废弃与变更请关注开放平台公告与迁移说明。</li>
+      </ul>
+    </div>
+
+    <p class="footer-note">
+      本文为<strong class="em">阿里云盘开放平台（阿里云盘 API / OpenAPI）</strong>历史公告的整理与排版，便于在应用内展示；最终以阿里云盘开放平台官方最新文档与公告为准。
+    </p>
+  </div>
+</body>
+</html>
